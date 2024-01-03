@@ -1,22 +1,30 @@
 import os
+from android import android_file
 
-dest1= str(input("enter first floder: "))
+def compare(file_list1 ,file_list2,):
+        x=0
+        for filename in file_list1:
+            x+=1
+            if filename not in file_list2:
+                print(f"index number:\t#{x}\nfile name:\t#{filename}\nwere NOT exist." )
+        print(f"{x} files were counted.")
 
-os.chdir(dest1)
-dest1_files = os.listdir()
-dest1_len = len(dest1_files)
-
-dest2= str(input("enter socend floder: "))
-
-os.chdir(dest2)
-dest2_files = os.listdir()
-dest2_len = len(dest2_files)
-
-for n in range(dest1_len):
-   
-    if dest1_files[n] in dest2_files:
-        pass
-    else:
-        print(f"index number:\t#{n}\nfile name:\t#{dest1_files[n]}\nwere NOT exist." )
-        pass
-    
+try:    
+    while True:
+        
+        file_source1= str(input("enter first floder: "))
+        file_source2= str(input("enter socend floder: "))
+        if "sdcard" in file_source1:
+            file_list1=android_file(file_source1)
+        if "sdcard" in file_source2:
+            file_list2=android_file(file_source2)
+        if "sdcard" not in file_source1:
+            os.chdir(file_source1)
+            file_list1 = os.listdir()
+        if "sdcard" not in file_source2:
+            os.chdir(file_source2)
+            file_list2 = os.listdir()  
+        compare(file_list1,file_list2)
+except KeyboardInterrupt:
+            print("\nctrl + c is pressed. tool was closed.")
+        
