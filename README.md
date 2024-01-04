@@ -31,4 +31,4 @@ Contribution:
  * If you find this project useful, Support the development of this project and star this repo! ⭐
 
  * under [GPL-v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license🔥
- * donation link:https://www.buymeacoffee.com/u0105
+ * [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/u0105)
