@@ -16,8 +16,6 @@
  
  change working directory to cloned repsitory ```cd FileAnalyzer```
 
- install dependencies ```pip insstall -r requirements.txt```
-
 ## usage:
  
  `python FileAnalyzer.py`
