@@ -8,23 +8,34 @@
 ## required:
  * Python 3.6+
  * os module
- * pure-python-adb librariey ```pip install pure-python-adb```
+ * pure-python-adb librariey
+  ```
+  pip install pure-python-adb
+  ```
 
 ## installation:
  
- clone repository ```git clone https://github.com/U0105/FileAnalyzer.git```
+ clone repository 
+ ```
+ git clone https://github.com/U0105/FileAnalyzer.git
+ ```
  
- change working directory to cloned repsitory ```cd FileAnalyzer```
-
+ change working directory to cloned repsitory 
+ ```
+ cd FileAnalyzer
+ ```
+ run the FileAnalyzer
+ ```
+ python FileAnalyzer.py
+ ```
 ## usage:
- 
- `python FileAnalyzer.py`
+  
  * Enter the paths to the first and second folders to compare.
  * The script will analyze the files and display any differences.
 
 Contribution:
 ---
- * If you encounter problems while using this mini-tool , open an issue or fell free to [email](nvpjxvh8s@mozmail.com) me😊
+ * If you encounter problems while using this mini-tool , open an issue or fell free to [email](mailto:nvpjxvh8s@mozmail.com?subject=[Github-FileAnalyzer]) me😊
 
  * If you find this project useful, Support the development of this project and star this repo! ⭐
 
